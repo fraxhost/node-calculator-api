@@ -30,8 +30,7 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
     
-  ## this part is written by me   
-  deploy:
+    deploy: ## <-- this is the new stuff
     needs: build
     runs-on: ubuntu-latest
     steps:
